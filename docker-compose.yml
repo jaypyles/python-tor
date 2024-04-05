@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  tor:
+    image: dperson/torproxy
+    ports:
+      - "9050:9050"
+      - "9051:9051"
+    networks:
+      - tor_network
+
+networks:
+  tor_network:
